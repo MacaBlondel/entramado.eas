@@ -1,0 +1,42 @@
+/* estilos del main index*/
+#main-index{
+    #texto-inicial{
+        background-color: #f03f3f;
+        text-align: center;
+        width: 100%;
+        padding: 15px 5px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    /* Estilos para las imágenes del entorno */
+    section{
+        div{
+            img{
+                height: 300px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    /* Profesionales y Profesiones*/
+
+    .profesionales{
+        text-align: center;
+        background-color: #fdc5ae 
+    }
+
+    section{
+        ul{
+            li{
+                list-style:none ;
+                .profesiones{
+                    font-weight: bold;
+                    color: #f03f3f;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}

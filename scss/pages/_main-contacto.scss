@@ -1,0 +1,31 @@
+.main-contacto{
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
+        justify-content: space-between;
+    }
+    .card{
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        object-fit: cover;
+    }
+    /* estilos del formulario*/
+    .boton-enviar{
+        background-color: #f03f3f;
+    }
+    /* configuración imagen de equipo */
+    .team-photo img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 15px;
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+}
