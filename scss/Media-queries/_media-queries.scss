@@ -1,0 +1,51 @@
+/* Media queries*/
+@media (max-width: 1024px){
+    
+    /* formulario contacto*/
+
+    form div{
+        width: 100%;
+    }
+    .botones{
+        justify-content: left;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* logo */
+    header{
+        nav{
+            div{
+                a{
+                   img #logo1{
+                    justify-content: center;
+                   } 
+                }
+            }
+        }
+    }
+
+    /* main taller de verano */
+    main .tallerDeVerano{
+        margin: 0 5px 5px 5px;
+        background-color: #fdeed1;
+    }
+
+    /* imagen de pag contacto*/
+    .team-photo{
+        display: none;
+    }
+
+    /*fotos pág contacto*/
+    .espacio-entramado{
+        flex-direction: column;
+    }
+    /* formulario contacto*/
+
+    form div{
+        width: 100%;
+    }
+
+}

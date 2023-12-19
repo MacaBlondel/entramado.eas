@@ -1,0 +1,22 @@
+.main-ubicacion{
+ /* Sección de Instalaciones*/
+ section .espacio-entramado{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-bottom: 0
+     }
+ div{
+    div .fotos-espacio{
+     img{
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+     }
+    }
+ }
+ div .texto-ubicacion{
+    text-align: center;
+ }
+
+}

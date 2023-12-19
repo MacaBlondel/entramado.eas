@@ -116,7 +116,7 @@ h1{
 }*/
 /* FIN PAG CONTACTO*/
 
-/*pagina ubicacion*/
+/*pagina ubicacion
 .espacio-entramado{
     display: flex;
     flex-direction: row-reverse;
@@ -133,11 +133,11 @@ h1{
 .texto-ubicacion{
     text-align: center;
     ;
-}
+}*/
 
 /* Taller de verano */
 
-/*main taller de verano*/
+/*main taller de verano
 
 .tallerDeVerano {
     display: grid;
@@ -167,10 +167,10 @@ h1{
     color: #f03f3f;
     font-size: 20px;
 }
-
+*/
 /*Activá tu cerebro*/
 
-/* main*/
+/* main
 .subtitulo-fe{
     font-weight: bold;
     color: #f03f3f;
@@ -187,12 +187,12 @@ h1{
 }
 .video-mente{
     margin-bottom: 20px;
-}
+}*/
 
-/* Media queries*/
-@media (max-width: 1024px){
+/* Media queries
+@media (max-width: 1024px){*/
     
-    /* formulario contacto*/
+    /* formulario contacto
     
     form div{
         width: 100%;
@@ -201,31 +201,31 @@ h1{
         justify-content: left;
     }
 
-}
+}*/
 
 @media (max-width: 768px) {
 
     /* logo hamburguesa*/
 
-    /* main taller de verano */
+    /* main taller de verano 
     main{
         margin: 0 5px 5px 5px;
         background-color: #fdeed1;
     }
 
-    /* imagen de pag contacto*/
+    /* imagen de pag contacto
     .team-photo{
         display: none;
     }
 
-    /*fotos pág contacto*/
+    /*fotos pág contacto
     .espacio-entramado{
         flex-direction: column;
-    }
-    /* formulario contacto*/
+    }*/
+    /* formulario contacto
 
     form div{
         width: 100%;
     }
 
-}
+}*/
