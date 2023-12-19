@@ -1,51 +1,78 @@
-/* Media queries*/
-@media (max-width: 1024px){
-    
-    /* formulario contacto*/
-
-    form div{
+/* Media queries */
+@media (max-width: 1024px) {
+    /* Formulario de contacto */
+    form div {
         width: 100%;
     }
-    .botones{
+    
+    .botones {
         justify-content: left;
     }
-
 }
 
 @media (max-width: 768px) {
-
-    /* logo */
-    header{
-        nav{
-            div{
-                a{
-                   img #logo1{
-                    justify-content: center;
-                   } 
+    /* Logo */
+    header {
+        nav {
+            div {
+                a {
+                    img#logo1 {
+                        justify-content: center;
+                    }
                 }
             }
         }
     }
 
-    /* main taller de verano */
-    main .tallerDeVerano{
+    /* Main taller de verano */
+    .main-tallerDeVerano {
         margin: 0 5px 5px 5px;
         background-color: #fdeed1;
     }
+    .main-tallerDeVerano{
+        .tallerDeVerano{
+            .niñosJugando{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    .main-tallerDeVerano {
+        display: flex;
+        flex-direction: column;
 
-    /* imagen de pag contacto*/
-    .team-photo{
+        .tallerDeVerano {
+          .niñosJugando {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            justify-content: center;
+          }
+        }
+    }
+
+    /* Imagen de página contacto */
+    .team-photo {
         display: none;
     }
 
-    /*fotos pág contacto*/
-    .espacio-entramado{
-        flex-direction: column;
-    }
-    /* formulario contacto*/
+    /* Fotos página contacto */
 
-    form div{
-        width: 100%;
-    }
+    .main-ubicacion {
+        /* Sección de Instalaciones */
+        .espacio-entramado{
+          display: flex;
+          flex-direction: column;
+          
+          
+      
+          div{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            }
 
+        }
+    } 
 }

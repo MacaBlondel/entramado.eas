@@ -33,6 +33,9 @@ h2 {
   font-weight: bold;
 }
 
+header {
+  background-color: white;
+}
 header nav div a #logo1 {
   max-width: 60%;
   height: auto;
@@ -70,10 +73,6 @@ header nav div a #logo1 {
   font-size: 18px;
 }
 
-main .main-contacto {
-  /* estilos del formulario*/
-  /*Foto del equipo de trabajo*/
-}
 main .main-contacto div .container {
   display: flex;
   flex-wrap: wrap;
@@ -89,33 +88,38 @@ main .main-contacto div .card {
   margin: 0;
   object-fit: cover;
 }
-main .main-contacto form .container div .botones button .boton-enviar {
+
+/* estilos del formulario*/
+form .container div .botones button .boton-enviar {
   background-color: #f03f3f;
 }
-main .main-contacto div .team-photo img {
-  max-width: 100%;
+
+/*Foto del equipo de trabajo*/
+div .team-photo img {
+  width: 100%;
   height: auto;
   object-fit: cover;
+  justify-content: center;
   margin-top: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main-ubicacion {
-  /* Sección de Instalaciones*/
+  /* Sección de Instalaciones */
 }
-.main-ubicacion section .espacio-entramado {
+.main-ubicacion .espacio-entramado {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 0;
 }
-.main-ubicacion div div .fotos-espacio img {
-  width: 200px;
+.main-ubicacion .espacio-entramado div {
   height: auto;
   object-fit: cover;
 }
-.main-ubicacion div .texto-ubicacion {
+.main-ubicacion .espacio-entramado div .texto-ubicacion p {
   text-align: center;
 }
 
@@ -125,23 +129,24 @@ main .main-contacto div .team-photo img {
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
-.main-tallerDeVerano div .tallerDeVerano {
+.main-tallerDeVerano .tallerDeVerano {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-.main-tallerDeVerano div .tallerDeVerano h1 .tituloTaller {
+.main-tallerDeVerano .tallerDeVerano .tituloTaller {
   grid-column: 1/-1;
 }
-.main-tallerDeVerano div .tallerDeVerano img .niñosJugando {
+.main-tallerDeVerano .tallerDeVerano .niñosJugando {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  align-items: center;
 }
-.main-tallerDeVerano div .tallerDeVerano div .texto {
+.main-tallerDeVerano .tallerDeVerano .texto {
   grid-column: 1/-1;
 }
-.main-tallerDeVerano div .tallerDeVerano div .texto p span {
+.main-tallerDeVerano .tallerDeVerano .texto p span {
   font-weight: bold;
   color: #f03f3f;
   font-size: 20px;
@@ -174,9 +179,9 @@ footer a img {
   max-width: 50px;
 }
 
-/* Media queries*/
+/* Media queries */
 @media (max-width: 1024px) {
-  /* formulario contacto*/
+  /* Formulario de contacto */
   form div {
     width: 100%;
   }
@@ -185,26 +190,46 @@ footer a img {
   }
 }
 @media (max-width: 768px) {
-  /* logo */
-  header nav div a img #logo1 {
+  /* Logo */
+  header nav div a img#logo1 {
     justify-content: center;
   }
-  /* main taller de verano */
-  main .tallerDeVerano {
+  /* Main taller de verano */
+  .main-tallerDeVerano {
     margin: 0 5px 5px 5px;
     background-color: #fdeed1;
   }
-  /* imagen de pag contacto*/
+  .main-tallerDeVerano .tallerDeVerano .niñosJugando {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .main-tallerDeVerano {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-tallerDeVerano .tallerDeVerano .niñosJugando {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    justify-content: center;
+  }
+  /* Imagen de página contacto */
   .team-photo {
     display: none;
   }
-  /*fotos pág contacto*/
-  .espacio-entramado {
+  /* Fotos página contacto */
+  .main-ubicacion {
+    /* Sección de Instalaciones */
+  }
+  .main-ubicacion .espacio-entramado {
+    display: flex;
     flex-direction: column;
   }
-  /* formulario contacto*/
-  form div {
+  .main-ubicacion .espacio-entramado div {
     width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
