@@ -3,14 +3,18 @@
    .espacio-entramado{
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
-     gap: 10px;
      margin-bottom: 0;
+     gap: 15px;
  
-     div{
-       height: auto;
-       object-fit: cover;
-       }
+     .fotos-espacio{
+        img{
+          width: 370px;
+          height: auto;
+          object-fit: cover;
+          align-items: center;
+          
+        }
+      }
      
  
      div .texto-ubicacion {

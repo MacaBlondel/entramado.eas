@@ -1,7 +1,7 @@
 /* estilos del main index*/
 #main-index{
     #texto-inicial{
-        background-color: #f03f3f;
+        background-color: $color-oscuro;
         text-align: center;
         width: 100%;
         padding: 15px 5px;
@@ -23,7 +23,7 @@
 
     .profesionales{
         text-align: center;
-        background-color: #fdc5ae 
+        background-color: $color-medio; 
     }
 
     section{
@@ -32,7 +32,7 @@
                 list-style:none ;
                 .profesiones{
                     font-weight: bold;
-                    color: #f03f3f;
+                    color: $color-oscuro;
                     font-size: 18px;
                 }
             }

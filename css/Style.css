@@ -111,13 +111,14 @@ div .team-photo img {
 .main-ubicacion .espacio-entramado {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
   margin-bottom: 0;
+  gap: 15px;
 }
-.main-ubicacion .espacio-entramado div {
+.main-ubicacion .espacio-entramado .fotos-espacio img {
+  width: 370px;
   height: auto;
   object-fit: cover;
+  align-items: center;
 }
 .main-ubicacion .espacio-entramado div .texto-ubicacion p {
   text-align: center;

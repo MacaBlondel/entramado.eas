@@ -2,14 +2,13 @@
 /* ESTILOS GLOBALES*/
 body{
     font-family: 'Baloo 2', sans-serif;
-    background-color: #fdeed1
-     ;
+    background-color: $color-claro;
 }
 
 /* títulos*/
 
 h1{
-    background-color: #f03f3f;
+    background-color: $color-oscuro;
     width: 100%;
     height: auto;
     padding: 15px 0 15px 0;
@@ -24,7 +23,7 @@ h2 {
     margin-bottom: 10px;
     margin-top: 15px;
     text-align:left;
-    color: #f03f3f;
+    color: $color-oscuro;
     font-weight: bold;
 }
 

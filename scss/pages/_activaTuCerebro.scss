@@ -3,7 +3,7 @@ main .activaTuCerebro{
     p{
         span .subtitulo-fe{
             font-weight: bold;
-            color: #f03f3f;
+            color: $color-oscuro;
             font-size: 25px;
         }
         span .frase-fa{
@@ -12,7 +12,7 @@ main .activaTuCerebro{
         }
         span .contactate{
             font-size: 20px;
-            color: #fdc5ae;
+            color: $color-medio;
             font-weight: bold;
         }
     }
