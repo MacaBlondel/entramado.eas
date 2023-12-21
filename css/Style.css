@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* reset */
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,8 +33,12 @@ h2 {
   font-weight: bold;
 }
 
-header {
-  background-color: white;
+header nav {
+  padding: 0;
+  margin: 0;
+}
+header nav div {
+  background-color: #fdc5ae;
 }
 header nav div a #logo1 {
   max-width: 60%;
@@ -73,36 +77,49 @@ header nav div a #logo1 {
   font-size: 18px;
 }
 
-main .main-contacto div .container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0%;
-  padding: 0%;
-  justify-content: space-between;
+.main-contacto {
+  /* Estilos de los botones del formulario */
+  /* Foto del equipo de trabajo */
 }
-main .main-contacto div .card {
+.main-contacto div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.main-contacto div.card {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  height: auto;
-  margin: 0;
-  object-fit: cover;
+  margin: 0, 0, 0, 0;
 }
-
-/* estilos del formulario*/
-form .container div .botones button .boton-enviar {
-  background-color: #f03f3f;
-}
-
-/*Foto del equipo de trabajo*/
-div .team-photo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  justify-content: center;
+.main-contacto form.container div.botones {
   margin-top: 15px;
+}
+.main-contacto form.container div.botones .boton-enviar {
+  background-color: #f03f3f;
+  border-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.main-contacto form.container div.botones .boton-borrar {
+  background-color: #fdc5ae;
+  border-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.main-contacto .team-photo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 15px;
+  opacity: 80%;
 }
 
 .main-ubicacion {
@@ -124,30 +141,23 @@ div .team-photo img {
   text-align: center;
 }
 
-/*Main taller de verano*/
+/* Main taller de verano */
 .main-tallerDeVerano {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+  display: flex;
+  /* Estilos de la imagen de niños jugando */
+  /* Estilos del texto */
 }
-.main-tallerDeVerano .tallerDeVerano {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-.main-tallerDeVerano .tallerDeVerano .tituloTaller {
-  grid-column: 1/-1;
-}
-.main-tallerDeVerano .tallerDeVerano .niñosJugando {
-  width: 100%;
+.main-tallerDeVerano .niñosJugando img {
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
   height: 300px;
   object-fit: cover;
-  align-items: center;
 }
-.main-tallerDeVerano .tallerDeVerano .texto {
-  grid-column: 1/-1;
+.main-tallerDeVerano p {
+  margin-top: 15px;
 }
-.main-tallerDeVerano .tallerDeVerano .texto p span {
+.main-tallerDeVerano p span {
   font-weight: bold;
   color: #f03f3f;
   font-size: 20px;
@@ -180,56 +190,112 @@ footer a img {
   max-width: 50px;
 }
 
-/* Media queries */
+/* Media queries tablet*/
 @media (max-width: 1024px) {
-  /* Formulario de contacto */
-  form div {
-    width: 100%;
-  }
-  .botones {
-    justify-content: left;
-  }
-}
-@media (max-width: 768px) {
   /* Logo */
-  header nav div a img#logo1 {
-    justify-content: center;
-  }
-  /* Main taller de verano */
-  .main-tallerDeVerano {
-    margin: 0 5px 5px 5px;
-    background-color: #fdeed1;
-  }
-  .main-tallerDeVerano .tallerDeVerano .niñosJugando {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .main-tallerDeVerano {
+  header nav div a {
     display: flex;
-    flex-direction: column;
+    justify-content: end;
+    align-items: center;
   }
-  .main-tallerDeVerano .tallerDeVerano .niñosJugando {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    justify-content: center;
+  header nav div a #logo {
+    width: 60%;
   }
-  /* Imagen de página contacto */
-  .team-photo {
-    display: none;
+  header nav div #boton-hamburguesa {
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+    top: 50px;
+    border-color: #fdeed1;
   }
-  /* Fotos página contacto */
+  /*Espacio-ubicación*/
   .main-ubicacion {
     /* Sección de Instalaciones */
   }
   .main-ubicacion .espacio-entramado {
+    flex-direction: row;
+  }
+  .main-ubicacion .espacio-entramado .fotos-espacio img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .main-tallerDeVerano {
+    /* Estilos de la imagen de niños jugando */
+  }
+  .main-tallerDeVerano .niñosJugando {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .activaTuCerebro .video-mente {
+    height: 300px;
+  }
+  /* Formulario de contacto */
+  .main-contacto form div {
+    width: 100%;
+  }
+  .main-contacto form.container div.botones .boton-enviar.boton-borrar {
+    margin-bottom: 25px;
+  }
+}
+/* Media queries celular*/
+@media (max-width: 768px) {
+  /* Logo */
+  header nav div a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  header nav div a #logo {
+    width: 60%;
+  }
+  header nav div #boton-hamburguesa {
+    position: absolute;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+    top: 30px;
+  }
+  .main-tallerDeVerano {
+    /* Estilos de la imagen de niños jugando */
+  }
+  .main-tallerDeVerano .niñosJugando {
+    height: 300px;
+  }
+  /* Imagen de página contacto */
+  /*card de contacto*/
+  .main-contacto {
+    /* Botones centrados*/
+  }
+  .main-contacto div.container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .main-ubicacion .espacio-entramado div {
+  .main-contacto div.card {
+    gap: 10px;
+  }
+  .main-contacto form .container div.botones .boton-enviar .boton-borrar {
+    justify-content: center;
+  }
+  .main-contacto .team-photo {
+    display: none;
+  }
+  /*Espacio-ubicación*/
+  .main-ubicacion {
+    /* Sección de Instalaciones */
+  }
+  .main-ubicacion .espacio-entramado {
+    flex-direction: column;
+  }
+  .main-ubicacion .espacio-entramado .fotos-espacio img {
     width: 100%;
-    height: auto;
+    height: 300px;
     object-fit: cover;
   }
 }

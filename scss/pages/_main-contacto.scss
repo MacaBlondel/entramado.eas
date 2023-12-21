@@ -1,39 +1,48 @@
-main .main-contacto{
-
- div .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0%;
-    padding: 0%;
-    justify-content: space-between;
-}
-
-div .card{
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    object-fit: cover;
-}
-}
- /* estilos del formulario*/
-form .container{
-  div .botones{
-    button .boton-enviar{
-        background-color: $color-oscuro;
-         }
+.main-contacto {
+    div.container {
+        @include flex( row,space-evenly,center);
+        gap: 10px;
+    }
+  
+    div.card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      margin: 0,0,0,0;
+    }
+  
+    /* Estilos de los botones del formulario */
+    form.container {
+        div.botones {
+            margin-top: 15px;
+          .boton-enviar {
+            background-color: $color-oscuro;
+            border-color: white;
+            border-radius: 8px;
+            padding: 5px;
+            margin-bottom: 15px;
+          }
+          
+          .boton-borrar {
+            background-color: $color-medio;
+            border-color: white;
+            border-radius: 8px;
+            padding: 5px;
+            margin-bottom: 15px;
+          }
+        }
+    }
+    /* Foto del equipo de trabajo */
+    .team-photo {
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include img(100%,400px,cover);
+            margin-top: 15px;
+            opacity: 80%;
+        }
+    
     }
 }
-/*Foto del equipo de trabajo*/
-div .team-photo{
-    img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        justify-content: center;
-        margin-top: 15px;
-        border-radius: 8px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-}
+  

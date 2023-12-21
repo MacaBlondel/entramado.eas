@@ -1,5 +1,22 @@
-@mixin fonts($font-size, $font-family, $color){
-    font-size: $font-size;
-    font-family: $font-family;
-    color: $color;
+//. Mixin FLEX
+@mixin flex( $flex-direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+//. Mixin GRID
+@mixin grid( $grid-column, $grid-row, $grid-area){
+    display: grid;
+    grid-template-columns: $grid-column;
+    grid-template-rows: $grid-row;
+    grid-template-areas: $grid-area;
+}
+
+//. Mixin foto
+@mixin img( $width, $height, $object-fit){
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
 }

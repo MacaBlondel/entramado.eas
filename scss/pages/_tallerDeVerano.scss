@@ -1,35 +1,27 @@
-/*Main taller de verano*/
+/* Main taller de verano */
 .main-tallerDeVerano {
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-gap: 20px; 
+  display: flex;
 
-  .tallerDeVerano {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+  /* Estilos de la imagen de niños jugando */
+  & .niñosJugando img {
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    height: 300px;
+    object-fit: cover;
+  }
 
-    .tituloTaller {
-      grid-column: 1 / -1; 
-    }
+  & p {
+    margin-top: 15px;
+  }
 
-    .niñosJugando {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      align-items: center; 
-    }
-
-    .texto {
-      grid-column: 1 / -1; 
-      
-      p {
-        span {
-          font-weight: bold;
-          color: $color-oscuro;
-          font-size: 20px;
-        }
-      }
-    }
+  /* Estilos del texto */
+  & p span {
+    font-weight: bold;
+    color: $color-oscuro; // Asegúrate de definir $color-oscuro
+    font-size: 20px;
   }
 }
+
+
+

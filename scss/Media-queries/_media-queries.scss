@@ -1,78 +1,158 @@
-/* Media queries */
-@media (max-width: 1024px) {
-    /* Formulario de contacto */
-    form div {
-        width: 100%;
-    }
-    
-    .botones {
-        justify-content: left;
-    }
-}
+/* Media queries tablet*/
+@media(max-width: 1024px) {
 
-@media (max-width: 768px) {
     /* Logo */
     header {
         nav {
             div {
                 a {
-                    img#logo1 {
-                        justify-content: center;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    #logo {
+                        width: 60%;
                     }
+                }
+
+                #boton-hamburguesa {
+                    position: absolute;
+                    align-items: center;
+                    justify-content: left;
+                    margin-bottom: 15px;
+                    top: 50px;
+                    border-color: $color-claro;
                 }
             }
         }
     }
 
-    /* Main taller de verano */
-    .main-tallerDeVerano {
-        margin: 0 5px 5px 5px;
-        background-color: #fdeed1;
-    }
-    .main-tallerDeVerano{
-        .tallerDeVerano{
-            .niñosJugando{
-                width: 100%;
-                height: auto;
-                object-fit: cover;
+    /*Espacio-ubicación*/
+    .main-ubicacion {
+
+        /* Sección de Instalaciones */
+        .espacio-entramado {
+            flex-direction: row;
+
+            .fotos-espacio {
+                img {
+                    @include img(100%, 300px, cover);
+                }
             }
         }
     }
-    .main-tallerDeVerano {
-        display: flex;
-        flex-direction: column;
 
-        .tallerDeVerano {
-          .niñosJugando {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+    .main-tallerDeVerano {
+
+        /* Estilos de la imagen de niños jugando */
+        & .niñosJugando {
             justify-content: center;
-          }
+            align-items: center;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .activaTuCerebro{
+        .video-mente{
+            height: 300px;
+        }
+    }
+
+    /* Formulario de contacto */
+
+    .main-contacto {
+        form div {
+            width: 100%;
+        }
+
+        form.container {
+            div.botones {
+                .boton-enviar.boton-borrar {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+/* Media queries celular*/
+
+@media(max-width: 768px) {
+
+    /* Logo */
+    header {
+        nav {
+            div {
+                a {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    #logo {
+                        width: 60%;
+                    }
+                }
+
+                #boton-hamburguesa {
+                    position: absolute;
+                    align-items: center;
+                    justify-content: left;
+                    margin-bottom: 15px;
+                    top: 30px;
+                }
+            }
+        }
+    }
+
+    .main-tallerDeVerano {
+
+        /* Estilos de la imagen de niños jugando */
+        & .niñosJugando {
+            height: 300px;
         }
     }
 
     /* Imagen de página contacto */
-    .team-photo {
-        display: none;
-    }
 
-    /* Fotos página contacto */
-
-    .main-ubicacion {
-        /* Sección de Instalaciones */
-        .espacio-entramado{
-          display: flex;
-          flex-direction: column;
-          
-          
-      
-          div{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            }
+    /*card de contacto*/
+    .main-contacto {
+        div.container {
+            @include flex(column, center, center);
 
         }
-    } 
+
+        div.card {
+            gap: 10px;
+        }
+
+        /* Botones centrados*/
+        form .container {
+            div.botones {
+                .boton-enviar .boton-borrar {
+                    justify-content: center;
+                }
+            }
+        }
+
+        .team-photo {
+            display: none;
+        }
+    }
+
+    /*Espacio-ubicación*/
+    .main-ubicacion {
+
+        /* Sección de Instalaciones */
+        .espacio-entramado {
+            flex-direction: column;
+
+            .fotos-espacio {
+                img {
+                    @include img(100%, 300px, cover);
+                }
+            }
+        }
+    }
 }
