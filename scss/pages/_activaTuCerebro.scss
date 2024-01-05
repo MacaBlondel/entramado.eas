@@ -1,23 +1,26 @@
 /*main Activa tu cerebro*/
-main .activaTuCerebro{
-    p{
-     
-        span .subtitulo-fe{
+#activa-tu-cerebro {
+    .texto-fe {
+        margin: 20px;
+
+        .subtitulo-fe {
             font-weight: bold;
             color: $color-oscuro;
             font-size: 25px;
         }
-        span .frase-fa{
+
+        .frase-fa {
             font-size: 15px;
             font-weight: bold;
         }
-        span .contactate{
+
+        .contactate {
             font-size: 20px;
             color: $color-medio;
             font-weight: bold;
         }
     }
-    iframe .video-mente{
-        margin-bottom: 20px;
+    iframe{
+        height: 400px;
     }
 }

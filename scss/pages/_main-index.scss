@@ -1,6 +1,8 @@
 /* estilos del main index*/
-#main-index{
-    #texto-inicial{
+#main-index {
+    padding: 0;
+
+    #texto-inicial {
         background-color: $color-oscuro;
         text-align: center;
         width: 100%;
@@ -9,28 +11,51 @@
         font-size: 20px;
         margin-bottom: 15px;
     }
+
+    /* Estilos texto index*/
+    section {
+        h2 {
+            margin: 30px;
+        }
+
+        p {
+            margin: 30px;
+            text-align: justify;
+
+            .texto-equipo {
+                font-size: 20px;
+                color: $color-oscuro;
+            }
+        }
+    }
+
     /* Estilos para las imágenes del entorno */
-    section{
-        div{
-            img{
-                height: 300px;
-                object-fit: cover;
+    section {
+        margin: 0;
+        div {
+            img {
+                @include img (350px, 300px, cover);
                 margin-bottom: 15px;
             }
         }
     }
+
     /* Profesionales y Profesiones*/
 
-    .profesionales{
+    .profesionales {
         text-align: center;
-        background-color: $color-medio; 
+        background-color: $color-medio;
     }
 
-    section{
-        ul{
-            li{
-                list-style:none ;
-                .profesiones{
+    section {
+        ul {
+            padding-left: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+
+                .profesiones {
                     font-weight: bold;
                     color: $color-oscuro;
                     font-size: 18px;

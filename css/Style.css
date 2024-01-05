@@ -47,6 +47,8 @@ header nav div a #logo1 {
 
 /* estilos del main index*/
 #main-index {
+  padding: 0;
+  /* Estilos texto index*/
   /* Estilos para las imágenes del entorno */
   /* Profesionales y Profesiones*/
 }
@@ -59,7 +61,22 @@ header nav div a #logo1 {
   font-size: 20px;
   margin-bottom: 15px;
 }
+#main-index section h2 {
+  margin: 30px;
+}
+#main-index section p {
+  margin: 30px;
+  text-align: justify;
+}
+#main-index section p .texto-equipo {
+  font-size: 20px;
+  color: #f03f3f;
+}
+#main-index section {
+  margin: 0;
+}
 #main-index section div img {
+  width: 350px;
   height: 300px;
   object-fit: cover;
   margin-bottom: 15px;
@@ -67,6 +84,10 @@ header nav div a #logo1 {
 #main-index .profesionales {
   text-align: center;
   background-color: #fdc5ae;
+}
+#main-index section ul {
+  padding-left: 0;
+  margin: 0;
 }
 #main-index section ul li {
   list-style: none;
@@ -81,18 +102,22 @@ header nav div a #logo1 {
   /* Estilos de los botones del formulario */
   /* Foto del equipo de trabajo */
 }
-.main-contacto div.container {
+.main-contacto .card-profesionales .card-contenedor {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
+  width: 100%;
 }
-.main-contacto div.card {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  margin: 0, 0, 0, 0;
+.main-contacto .card-profesionales .card-contenedor .card {
+  margin-bottom: 20px;
+}
+.main-contacto .card-profesionales .card-contenedor .card img {
+  height: 300px;
+  object-fit: cover;
+}
+.main-contacto .card-profesionales .card-contenedor .card .card-body h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f03f3f;
 }
 .main-contacto form.container div.botones {
   margin-top: 15px;
@@ -164,22 +189,25 @@ header nav div a #logo1 {
 }
 
 /*main Activa tu cerebro*/
-main .activaTuCerebro p span .subtitulo-fe {
+#activa-tu-cerebro .texto-fe {
+  margin: 20px;
+}
+#activa-tu-cerebro .texto-fe .subtitulo-fe {
   font-weight: bold;
   color: #f03f3f;
   font-size: 25px;
 }
-main .activaTuCerebro p span .frase-fa {
+#activa-tu-cerebro .texto-fe .frase-fa {
   font-size: 15px;
   font-weight: bold;
 }
-main .activaTuCerebro p span .contactate {
+#activa-tu-cerebro .texto-fe .contactate {
   font-size: 20px;
   color: #fdc5ae;
   font-weight: bold;
 }
-main .activaTuCerebro iframe .video-mente {
-  margin-bottom: 20px;
+#activa-tu-cerebro iframe {
+  height: 400px;
 }
 
 /* Estilos para el logo fijo */
@@ -195,7 +223,7 @@ footer a img {
   /* Logo */
   header nav div a {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
   }
   header nav div a #logo {
@@ -204,10 +232,18 @@ footer a img {
   header nav div #boton-hamburguesa {
     position: absolute;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 15px;
     top: 50px;
     border-color: #fdeed1;
+  }
+  /*Main index*/
+  #main-index {
+    margin-bottom: 25px;
+    /* Estilos para las imágenes del entorno */
+  }
+  #main-index section {
+    margin: 0;
   }
   /*Espacio-ubicación*/
   .main-ubicacion {
@@ -231,10 +267,25 @@ footer a img {
     height: 400px;
     object-fit: cover;
   }
-  .activaTuCerebro .video-mente {
+  #activaTuCerebro iframe {
     height: 300px;
   }
   /* Formulario de contacto */
+  .main-contacto .card-profesionales .card-contenedor {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .main-contacto .card-profesionales .card-contenedor .card {
+    margin-bottom: 25px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 14px -6px rgba(0, 0, 0, 0.51);
+  }
+  .main-contacto .card-profesionales .card-contenedor .card img {
+    height: 250px;
+  }
   .main-contacto form div {
     width: 100%;
   }
@@ -259,6 +310,30 @@ footer a img {
     justify-content: left;
     margin-bottom: 15px;
     top: 30px;
+  }
+  #main-index {
+    /* Estilos texto index*/
+    /* Profesionales y Profesiones*/
+  }
+  #main-index #texto-inicial {
+    padding: 15px;
+  }
+  #main-index section h2 {
+    text-align: center;
+  }
+  #main-index section {
+    text-align: center;
+  }
+  #main-index section ul li .profesiones {
+    font-weight: bold;
+    color: #f03f3f;
+    font-size: 18px;
+  }
+  #main-index section ul li .profesiones ul {
+    gap: 15px;
+  }
+  #activaTuCerebro iframe {
+    height: 200px;
   }
   .main-tallerDeVerano {
     /* Estilos de la imagen de niños jugando */
