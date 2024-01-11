@@ -64,7 +64,7 @@ form.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include img(100%, 400px, cover);
+    @include img(100%, 500px, cover);
     margin-top: 15px;
   }
 
